@@ -84,6 +84,8 @@ class SamPredict:
         print('识别主体Mask次数为:', masks.shape[0])
         # print(masks)
         print(scores)
+        
+        
 
         for i, (mask, score) in enumerate(zip(masks, scores)):
             plt.imshow(self.image)
